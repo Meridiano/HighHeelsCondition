@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin version="0.7.4">
+  <TES4 flags="0x00000000" id="00000000" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
+    <HEDR>
+      <struct version="1.70000005" numRecords="9" nextObjectID="00000807" />
+    </HEDR>
+    <CNAM>Meridiano</CNAM>
+    <SNAM>Version 1.2</SNAM>
+    <INTV>1</INTV>
+  </TES4>
+  <GRUP label="GLOB" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
+    <GLOB flags="0x00000000" id="00000801" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
+      <EDID>HighHeelsDelayTimer</EDID>
+      <FNAM>102</FNAM>
+      <FLTV>1</FLTV>
+    </GLOB>
+  </GRUP>
+  <GRUP label="MGEF" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
+    <MGEF flags="0x00000000" id="00000803" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
+      <EDID>HighHeelsNPCEffect</EDID>
+      <VMAD version="5" format="2">
+        <script name="HighHeelsConditionEffectScript" status="0">
+          <property name="HighHeelsConditionQuest" type="1" status="1">
+            <object formID="00000800" alias="65535" unused="0x0000" />
+          </property>
+          <property name="HighHeelsDelayTimer" type="1" status="1">
+            <object formID="00000801" alias="65535" unused="0x0000" />
+          </property>
+        </script>
+      </VMAD>
+      <FULL>HighHeelsNPCEffect</FULL>
+      <DATA>
+        <struct flags="0x14028e10" baseCost="0" relatedID="00000000" skill="-1" resistanceAV="4294967295" unknown1="0x00000000" lightID="00000000" taperWeight="0" hitShader="00000000" enchantShader="00000000" skillLevel="0" area="0" castingTime="0" taperCurve="0" taperDuration="0" secondAVWeight="0" effectType="1" primaryAV="-1" projectileID="00000000" explosionID="00000000" castType="0" deliveryType="0" secondAV="-1" castingArtID="00000000" hitEffectArtID="00000000" impactDataID="00000000" skillUsageMult="0" dualCastID="00000000" dualCastScale="1" enchantArtID="00000000" nullData1="0x00000000" nullData2="0x00000000" equipAbility="00000000" imageSpaceModID="00000000" perkID="00000000" soundVolume="1" scriptAIDataScore="0" scriptAIDataDelayTime="0" />
+      </DATA>
+      <SNDD />
+      <DNAM></DNAM>
+      <CTDA>
+        <operator>0x00</operator>
+        <unknown0>0x00,0x00,0x00</unknown0>
+        <comparisonValueFloat>0</comparisonValueFloat>
+        <functionIndex>136</functionIndex>
+        <padding>0x00,0x00</padding>
+        <param1>0x00000014</param1>
+        <param2>0x00000000</param2>
+        <runOnType>0</runOnType>
+        <reference>00000000</reference>
+        <unknown1>0xffffffff</unknown1>
+      </CTDA>
+    </MGEF>
+  </GRUP>
+  <GRUP label="SPEL" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
+    <SPEL flags="0x00000000" id="00000802" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
+      <EDID>HighHeelsConditionSpell</EDID>
+      <OBND>
+        <struct min="0,0,0" max="0,0,0" />
+      </OBND>
+      <FULL>HighHeelsConditionSpell</FULL>
+      <DESC></DESC>
+      <SPIT>
+        <struct spellCost="0" flags="0x00300000" type="4" chargeTime="0" castType="0" delivery="0" castDuration="0" range="0" perk="00000000" />
+      </SPIT>
+      <EFID>00000000</EFID>
+      <EFIT>
+        <struct magnitude="0" areaOfEffect="0" duration="0" />
+      </EFIT>
+    </SPEL>
+    <SPEL flags="0x00000000" id="00000804" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
+      <EDID>HighHeelsNPCSpell</EDID>
+      <OBND>
+        <struct min="0,0,0" max="0,0,0" />
+      </OBND>
+      <FULL>HighHeelsNPCSpell</FULL>
+      <DESC></DESC>
+      <SPIT>
+        <struct spellCost="0" flags="0x00300000" type="4" chargeTime="0" castType="0" delivery="0" castDuration="0" range="0" perk="00000000" />
+      </SPIT>
+      <EFID>00000803</EFID>
+      <EFIT>
+        <struct magnitude="0" areaOfEffect="0" duration="0" />
+      </EFIT>
+    </SPEL>
+  </GRUP>
+  <GRUP label="QUST" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
+    <QUST flags="0x00000000" id="00000800" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
+      <EDID>HighHeelsConditionQuest</EDID>
+      <VMAD version="5" format="2">
+        <script name="HighHeelsConditionQuestScript" status="0">
+          <property name="HighHeelsConditionSpell" type="1" status="1">
+            <object formID="00000802" alias="65535" unused="0x0000" />
+          </property>
+        </script>
+        <fragments unknown="0x02" filename="">
+          <alias unknown="0x00000000" object="0x00000800" version="5" objectFormat="2">
+            <script name="HighHeelsConditionAliasScript" status="0">
+              <property name="HighHeelsConditionQuest" type="1" status="1">
+                <object formID="00000800" alias="65535" unused="0x0000" />
+              </property>
+              <property name="HighHeelsDelayTimer" type="1" status="1">
+                <object formID="00000801" alias="65535" unused="0x0000" />
+              </property>
+            </script>
+          </alias>
+        </fragments>
+      </VMAD>
+      <FULL>HighHeelsConditionQuest</FULL>
+      <DNAM>
+        <struct flags="0x0111" priority="50" unknown0="0xff" unknown1="0x00000000" type="0" />
+      </DNAM>
+      <NEXT />
+      <INDX>
+        <struct index="10" flags="0x02" unknown="0" />
+      </INDX>
+      <ANAM>1</ANAM>
+      <ALST>0</ALST>
+      <ALID>PlayerAlias</ALID>
+      <FNAM>0</FNAM>
+      <ALFR>00000014</ALFR>
+      <VTCK>00000000</VTCK>
+      <ALED />
+    </QUST>
+  </GRUP>
+</plugin>
