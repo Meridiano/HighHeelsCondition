@@ -1,6 +1,6 @@
 # HighHeelsCondition
 
-Skyrim RaceMenu High Heels Condition Solution
+Skyrim SE RaceMenu High Heels Condition Solution
 
 Basic usage:
 ```
