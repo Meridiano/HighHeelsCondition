@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin version="0.7.4">
-  <TES4 flags="0x00000000" id="00000000" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
+  <TES4 flags="0x00000201" id="00000000" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
     <HEDR>
-      <struct version="1.70000005" numRecords="9" nextObjectID="00000807" />
+      <struct version="1.70000005" numRecords="9" nextObjectID="00000805" />
     </HEDR>
     <CNAM>Meridiano</CNAM>
-    <SNAM>Version 1.2</SNAM>
+    <SNAM>Version 1.3</SNAM>
     <INTV>1</INTV>
   </TES4>
   <GRUP label="GLOB" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
     <GLOB flags="0x00000000" id="00000801" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
       <EDID>HighHeelsDelayTimer</EDID>
       <FNAM>102</FNAM>
-      <FLTV>1</FLTV>
+      <FLTV>0.25</FLTV>
     </GLOB>
   </GRUP>
   <GRUP label="MGEF" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
