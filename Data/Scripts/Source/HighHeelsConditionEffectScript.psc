@@ -12,8 +12,8 @@ EndEvent
 
 Event OnUnload()
 	Utility.Wait(Math.Abs(HighHeelsDelayTimer.GetValue()))
-	SelfActor = Self.GetTargetActor()
-	HighHeelsConditionQuest.ApplyConditionSpell(SelfActor)
+	HighHeelsConditionQuest.ApplyConditionSpell(SelfActor, True, False)
+	SelfActor = None
 EndEvent
 
 Event OnObjectEquipped(Form BaseObject, ObjectReference Reference)

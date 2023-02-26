@@ -12,14 +12,24 @@ Bool Function ActorHasHHActive(Actor akActor)
 	Return False
 EndFunction
 
-Function ApplyConditionSpell(Actor akActor)
+Function ApplyConditionSpell(Actor akActor, Bool bForce = False, Bool bForceValue = False)
 	If (akActor as Bool)
-		If ActorHasHHActive(akActor)
-			Bool Result = AddConditionSpell(akActor)
-			;Debug.Trace(akActor as String + " / HighHeelsConditionQuestScript.ApplyConditionSpell >> HH Enabled / Result = " + Result as String)
+		If bForce
+			If bForceValue
+				Bool Result = AddConditionSpell(akActor)
+				;Debug.Trace(akActor as String + " / HighHeelsConditionQuestScript.ApplyConditionSpell >> Forced Add / Result = " + Result as String)
+			Else
+				Bool Result = RemoveConditionSpell(akActor)
+				;Debug.Trace(akActor as String + " / HighHeelsConditionQuestScript.ApplyConditionSpell >> Forced Remove / Result = " + Result as String)
+			EndIf
 		Else
-			Bool Result = RemoveConditionSpell(akActor)
-			;Debug.Trace(akActor as String + " / HighHeelsConditionQuestScript.ApplyConditionSpell >> HH Disabled / Result = " + Result as String)
+			If ActorHasHHActive(akActor)
+				Bool Result = AddConditionSpell(akActor)
+				;Debug.Trace(akActor as String + " / HighHeelsConditionQuestScript.ApplyConditionSpell >> Heels Enabled / Result = " + Result as String)
+			Else
+				Bool Result = RemoveConditionSpell(akActor)
+				;Debug.Trace(akActor as String + " / HighHeelsConditionQuestScript.ApplyConditionSpell >> Heels Disabled / Result = " + Result as String)
+			EndIf
 		EndIf
 	EndIf
 EndFunction
