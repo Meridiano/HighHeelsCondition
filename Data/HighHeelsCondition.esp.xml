@@ -5,17 +5,17 @@
       <struct version="1.70000005" numRecords="9" nextObjectID="00000805" />
     </HEDR>
     <CNAM>Meridiano</CNAM>
-    <SNAM>Version 1.4.1</SNAM>
+    <SNAM>Version 1.5</SNAM>
     <INTV>1</INTV>
   </TES4>
-  <GRUP label="GLOB" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
+  <GRUP label="GLOB" groupType="0" day="169" month="46" lastUserID="0" currentUserID="0" unknown="0x00000000">
     <GLOB flags="0x00000000" id="00000801" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
       <EDID>HighHeelsDelayTimer</EDID>
       <FNAM>102</FNAM>
       <FLTV>0.25</FLTV>
     </GLOB>
   </GRUP>
-  <GRUP label="MGEF" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
+  <GRUP label="MGEF" groupType="0" day="169" month="46" lastUserID="0" currentUserID="0" unknown="0x00000000">
     <MGEF flags="0x00000000" id="00000803" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
       <EDID>HighHeelsNPCEffect</EDID>
       <VMAD version="5" format="2">
@@ -48,7 +48,7 @@
       </CTDA>
     </MGEF>
   </GRUP>
-  <GRUP label="SPEL" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
+  <GRUP label="SPEL" groupType="0" day="169" month="46" lastUserID="0" currentUserID="0" unknown="0x00000000">
     <SPEL flags="0x00000000" id="00000802" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
       <EDID>HighHeelsConditionSpell</EDID>
       <OBND>
@@ -78,9 +78,21 @@
       <EFIT>
         <struct magnitude="0" areaOfEffect="0" duration="0" />
       </EFIT>
+      <CTDA>
+        <operator>0x20</operator>
+        <unknown0>0x00,0x00,0x00</unknown0>
+        <comparisonValueFloat>0</comparisonValueFloat>
+        <functionIndex>555</functionIndex>
+        <padding>0x00,0x00</padding>
+        <param1>0x00000000</param1>
+        <param2>0x00000000</param2>
+        <runOnType>0</runOnType>
+        <reference>00000000</reference>
+        <unknown1>0xffffffff</unknown1>
+      </CTDA>
     </SPEL>
   </GRUP>
-  <GRUP label="QUST" groupType="0" day="69" month="45" lastUserID="0" currentUserID="0" unknown="0x00000000">
+  <GRUP label="QUST" groupType="0" day="169" month="46" lastUserID="0" currentUserID="0" unknown="0x00000000">
     <QUST flags="0x00000000" id="00000800" day="0" month="0" lastUserID="0" currentUserID="0" version="44" unknown="0x0000">
       <EDID>HighHeelsConditionQuest</EDID>
       <VMAD version="5" format="2">

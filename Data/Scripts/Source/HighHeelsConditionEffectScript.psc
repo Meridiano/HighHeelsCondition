@@ -15,12 +15,12 @@ HighHeelsConditionQuestScript Property HighHeelsConditionQuest Auto
 
 Actor SelfActorLocal = None
 
-Event OnLoad()
+Event OnEffectStart(Actor Target, Actor Caster)
 	Utility.Wait(Math.Abs(HighHeelsDelayTimer.GetValue()))
 	HighHeelsConditionQuest.ApplyConditionSpell(SelfActor)
 EndEvent
 
-Event OnUnload()
+Event OnEffectFinish(Actor Target, Actor Caster)
 	Utility.Wait(Math.Abs(HighHeelsDelayTimer.GetValue()))
 	HighHeelsConditionQuest.ApplyConditionSpell(SelfActor, True, False)
 EndEvent

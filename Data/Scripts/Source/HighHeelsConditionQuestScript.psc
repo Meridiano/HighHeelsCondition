@@ -7,7 +7,13 @@ Bool Function ActorHasHHActive(Actor akActor)
 		Bool bFemale = akActor.GetLeveledActorBase().GetSex() as Bool
 		String[] TransformKeys = NiOverride.GetNodeTransformKeys(akActor, False, bFemale, "NPC")
 		Debug.Trace(akActor as String + " / HighHeelsConditionQuestScript.ActorHasHHActive >> TransformKeys = " + TransformKeys as String)
-		Return (TransformKeys.Find("internal") >= 0)
+		If (TransformKeys.Find("internal") >= 0)
+			Float NewOffset = NiOverride.GetNodeTransformPosition(akActor, False, bFemale, "NPC", "internal")[2]
+			akActor.SetActorValue("HighHeelsOffset", NewOffset)
+			Return True
+		EndIf
+		akActor.SetActorValue("HighHeelsOffset", 0.0)
+		Return False
 	EndIf
 	Return False
 EndFunction
