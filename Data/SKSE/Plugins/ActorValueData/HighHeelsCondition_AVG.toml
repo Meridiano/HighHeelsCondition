@@ -3,4 +3,6 @@
 # If actor has no high heels active this is equal to 0.0
 # If actor has high heels active this value is positive float
 # In both cases you can get it via Papyrus Game.GetPlayer().GetActorValue("HighHeelsOffset")
+# You can also use it in your conditions as "Mood" if you make a specific patch for your plugin
 type = "Adaptive"
+alias = "Mood"
