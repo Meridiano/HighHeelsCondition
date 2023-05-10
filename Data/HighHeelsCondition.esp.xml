@@ -5,7 +5,7 @@
       <struct version="1.70000005" numRecords="9" nextObjectID="00000805" />
     </HEDR>
     <CNAM>Meridiano</CNAM>
-    <SNAM>Version 1.5</SNAM>
+    <SNAM>Version 1.5.1</SNAM>
     <INTV>1</INTV>
   </TES4>
   <GRUP label="GLOB" groupType="0" day="169" month="46" lastUserID="0" currentUserID="0" unknown="0x00000000">
